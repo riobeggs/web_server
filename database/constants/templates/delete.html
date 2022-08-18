@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body style="font-family:Verdana; background-color:powderblue; text-align:center;">
+    <h1 style="font-size:300%; color:dodgerblue">Delete</h1>
+
+    {% if not_exists %}
+        <p style="color:tomato">Data does not exist.</p>
+    {% endif %}
+
+    <form action="/delete", method="POST">
+        First name: <label for="first_name"></label><br>
+        <input type="text" name="first_name"><br>
+
+        Last name: <label for="last_name"></label><br>
+        <input type="text" name="last_name"><br>
+
+        <input type="submit" value="Submit">
+      </form> 
+
+      <br>
+
+      <p style="font-size:75%;">Click <a href="\">here</a> to go home.</p>
+  
+</body>
+</html>
