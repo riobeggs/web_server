@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 def load_config():
     config_file = open(
-        "/Users/riobeggs/Documents/personal/coding/python/python-training/database/constants/config.json"
+        "/Users/riobeggs/Documents/code/web_server/webserver_files/config.json"
     )
     data = json.load(config_file)
     return data
