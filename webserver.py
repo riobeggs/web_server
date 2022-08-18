@@ -1,8 +1,8 @@
 from flask import render_template, request
 
-from constants.web_constants import WebMethod
-import constants.models as appmod
-from constants.settings import app, db
+from webserver_files.web_constants import WebMethod
+import webserver_files.models as appmod
+from webserver_files.settings import app, db
 
 
 #TODO move files into webserver repo

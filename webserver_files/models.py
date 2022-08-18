@@ -1,4 +1,4 @@
-from constants.settings import db
+from webserver_files.settings import db
 
 
 class People(db.Model):
