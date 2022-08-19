@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body style="font-family:Verdana; background-color:powderblue; text-align:center;">
+    <h1 style="font-size:300%; color:dodgerblue">Create</h1>
+
+    {% if dob_error %}
+        <p style="color:tomato">Please enter a valid DOB (yyyy-mm-dd).</p>
+    {% endif %}
+
+    {% if exists %}
+        <p style="color:tomato">Person already in database.</p>
+    {% endif %}
+
+    <form action="/create", method="POST">
+        First name: <label for="first_name"></label><br>
+        <input type="text" name="first_name"><br>
+
+        Last name: <label for="last_name"></label><br>
+        <input type="text" name="last_name"><br>
+
+        DOB (yyyy-mm-dd): <label for="DOB"></label><br>
+        <input type="text" name="DOB"><br> 
+
+        <input type="submit" value="Submit">
+      </form> 
+
+    <br>
+
+    <p style="font-size:75%;">Click <a href="\">here</a> to go home.</p>
+
+</body>
+</html>

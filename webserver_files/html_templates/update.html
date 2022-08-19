@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body style="font-family:Verdana; background-color:powderblue; text-align:center;">
+    <h1 style="font-size:300%; color:dodgerblue">Update</h1>
+
+    {% if dob_error %}
+        <p style="color:tomato">Please enter a valid DOB (yyyy-mm-dd).</p>
+    {% endif %}
+
+    {% if not_exists %}
+        <p style="color:tomato">Data does not exist.</p>
+    {% endif %}
+
+        <p>Enter the first and last name of the person you wish to update.</p>
+        <br>
+    <form action="/update", method="POST">
+        Previous first name: <label for="prev_first_name"></label><br>
+        <input type="text" name="prev_first_name"><br>
+
+        Previous last name: <label for="prev_last_name"></label><br>
+        <input type="text" name="prev_last_name"><br><br>
+
+        <p>Now update the person with their new data.</p>
+        <br>
+
+        Updated first name: <label for="updated_first_name"></label><br>
+        <input type="text" name="updated_first_name"><br>
+
+        Updated last name: <label for="updated_last_name"></label><br>
+        <input type="text" name="updated_last_name"><br>
+
+        Updated DOB (yyyy-mm-dd): <label for="updated_DOB"></label><br>
+        <input type="text" name="updated_DOB"><br> 
+
+        <input type="submit" value="Submit">
+      </form> 
+
+      <br>
+
+      <p style="font-size:75%;">Click <a href="\">here</a> to go home.</p>
+  
+</body>
+</html>
