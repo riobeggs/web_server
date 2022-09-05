@@ -4,10 +4,7 @@ import json
 
 os.system("createdb webserver")
 
-config_file = open(
-    # replace user specific config.json path
-    "/Users/riobeggs/Documents/code/web_server/webserver_files/config.json"
-)
+config_file = open("config.json")
 
 json = json.load(config_file)
 
